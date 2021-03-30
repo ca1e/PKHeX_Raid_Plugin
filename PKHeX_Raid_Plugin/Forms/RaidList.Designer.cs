@@ -59,6 +59,10 @@
             this.CB_Den = new System.Windows.Forms.ComboBox();
             this.GB_Right = new System.Windows.Forms.GroupBox();
             this.DenMap = new System.Windows.Forms.PictureBox();
+            this.CB_mRandRoll = new System.Windows.Forms.ComboBox();
+            this.CB_mStars = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.GB_Left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_PK1)).BeginInit();
             this.GB_Right.SuspendLayout();
@@ -69,6 +73,10 @@
             // 
             this.GB_Left.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.GB_Left.Controls.Add(this.label3);
+            this.GB_Left.Controls.Add(this.label2);
+            this.GB_Left.Controls.Add(this.CB_mStars);
+            this.GB_Left.Controls.Add(this.CB_mRandRoll);
             this.GB_Left.Controls.Add(this.CHK_Watts);
             this.GB_Left.Controls.Add(this.CHK_Wishing);
             this.GB_Left.Controls.Add(this.L_Shiny);
@@ -97,11 +105,11 @@
             this.GB_Left.Controls.Add(this.TB_HP_IV1);
             this.GB_Left.Controls.Add(this.L_DenSeed);
             this.GB_Left.Controls.Add(this.CB_Den);
-            this.GB_Left.Location = new System.Drawing.Point(9, 10);
+            this.GB_Left.Location = new System.Drawing.Point(9, 9);
             this.GB_Left.Margin = new System.Windows.Forms.Padding(2);
             this.GB_Left.Name = "GB_Left";
             this.GB_Left.Padding = new System.Windows.Forms.Padding(2);
-            this.GB_Left.Size = new System.Drawing.Size(227, 419);
+            this.GB_Left.Size = new System.Drawing.Size(227, 387);
             this.GB_Left.TabIndex = 0;
             this.GB_Left.TabStop = false;
             this.GB_Left.Text = "Den List";
@@ -111,11 +119,11 @@
             this.CHK_Watts.AutoCheck = false;
             this.CHK_Watts.AutoSize = true;
             this.CHK_Watts.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CHK_Watts.Location = new System.Drawing.Point(12, 211);
+            this.CHK_Watts.Location = new System.Drawing.Point(12, 195);
             this.CHK_Watts.Margin = new System.Windows.Forms.Padding(2);
             this.CHK_Watts.Name = "CHK_Watts";
             this.CHK_Watts.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CHK_Watts.Size = new System.Drawing.Size(106, 17);
+            this.CHK_Watts.Size = new System.Drawing.Size(114, 16);
             this.CHK_Watts.TabIndex = 26;
             this.CHK_Watts.Text = "Watts Harvested";
             this.CHK_Watts.UseVisualStyleBackColor = true;
@@ -125,11 +133,11 @@
             this.CHK_Wishing.AutoCheck = false;
             this.CHK_Wishing.AutoSize = true;
             this.CHK_Wishing.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CHK_Wishing.Location = new System.Drawing.Point(12, 191);
+            this.CHK_Wishing.Location = new System.Drawing.Point(12, 176);
             this.CHK_Wishing.Margin = new System.Windows.Forms.Padding(2);
             this.CHK_Wishing.Name = "CHK_Wishing";
             this.CHK_Wishing.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CHK_Wishing.Size = new System.Drawing.Size(94, 17);
+            this.CHK_Wishing.Size = new System.Drawing.Size(102, 16);
             this.CHK_Wishing.TabIndex = 25;
             this.CHK_Wishing.Text = "Wishing Piece";
             this.CHK_Wishing.UseVisualStyleBackColor = true;
@@ -137,47 +145,47 @@
             // L_Shiny
             // 
             this.L_Shiny.AutoSize = true;
-            this.L_Shiny.Location = new System.Drawing.Point(91, 279);
+            this.L_Shiny.Location = new System.Drawing.Point(91, 258);
             this.L_Shiny.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_Shiny.Name = "L_Shiny";
-            this.L_Shiny.Size = new System.Drawing.Size(36, 13);
+            this.L_Shiny.Size = new System.Drawing.Size(41, 12);
             this.L_Shiny.TabIndex = 24;
             this.L_Shiny.Text = "Shiny!";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 31);
+            this.label1.Location = new System.Drawing.Point(9, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 13);
+            this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 23;
             this.label1.Text = "Den:";
             // 
             // L_Spe
             // 
-            this.L_Spe.Location = new System.Drawing.Point(5, 338);
+            this.L_Spe.Location = new System.Drawing.Point(5, 312);
             this.L_Spe.Name = "L_Spe";
-            this.L_Spe.Size = new System.Drawing.Size(50, 20);
+            this.L_Spe.Size = new System.Drawing.Size(50, 18);
             this.L_Spe.TabIndex = 22;
             this.L_Spe.Text = "Spe:";
             this.L_Spe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Stars
             // 
-            this.L_Stars.Location = new System.Drawing.Point(124, 193);
+            this.L_Stars.Location = new System.Drawing.Point(124, 178);
             this.L_Stars.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_Stars.Name = "L_Stars";
-            this.L_Stars.Size = new System.Drawing.Size(70, 21);
+            this.L_Stars.Size = new System.Drawing.Size(70, 19);
             this.L_Stars.TabIndex = 19;
             this.L_Stars.Text = "*****";
             this.L_Stars.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // L_SpD
             // 
-            this.L_SpD.Location = new System.Drawing.Point(5, 317);
+            this.L_SpD.Location = new System.Drawing.Point(5, 293);
             this.L_SpD.Name = "L_SpD";
-            this.L_SpD.Size = new System.Drawing.Size(50, 20);
+            this.L_SpD.Size = new System.Drawing.Size(50, 18);
             this.L_SpD.TabIndex = 21;
             this.L_SpD.Text = "SpD:";
             this.L_SpD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -185,18 +193,18 @@
             // L_Location
             // 
             this.L_Location.AutoSize = true;
-            this.L_Location.Location = new System.Drawing.Point(53, 53);
+            this.L_Location.Location = new System.Drawing.Point(53, 49);
             this.L_Location.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_Location.Name = "L_Location";
-            this.L_Location.Size = new System.Drawing.Size(54, 13);
+            this.L_Location.Size = new System.Drawing.Size(59, 12);
             this.L_Location.TabIndex = 18;
             this.L_Location.Text = "$Location";
             // 
             // L_SpA
             // 
-            this.L_SpA.Location = new System.Drawing.Point(5, 296);
+            this.L_SpA.Location = new System.Drawing.Point(5, 273);
             this.L_SpA.Name = "L_SpA";
-            this.L_SpA.Size = new System.Drawing.Size(50, 20);
+            this.L_SpA.Size = new System.Drawing.Size(50, 18);
             this.L_SpA.TabIndex = 20;
             this.L_SpA.Text = "SpA:";
             this.L_SpA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -204,61 +212,61 @@
             // L_Ability
             // 
             this.L_Ability.AutoSize = true;
-            this.L_Ability.Location = new System.Drawing.Point(91, 257);
+            this.L_Ability.Location = new System.Drawing.Point(91, 237);
             this.L_Ability.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_Ability.Name = "L_Ability";
-            this.L_Ability.Size = new System.Drawing.Size(37, 13);
+            this.L_Ability.Size = new System.Drawing.Size(53, 12);
             this.L_Ability.TabIndex = 13;
             this.L_Ability.Text = "Ability:";
             // 
             // TB_SPE_IV1
             // 
-            this.TB_SPE_IV1.Location = new System.Drawing.Point(56, 338);
+            this.TB_SPE_IV1.Location = new System.Drawing.Point(56, 312);
             this.TB_SPE_IV1.Name = "TB_SPE_IV1";
             this.TB_SPE_IV1.ReadOnly = true;
-            this.TB_SPE_IV1.Size = new System.Drawing.Size(20, 20);
+            this.TB_SPE_IV1.Size = new System.Drawing.Size(20, 21);
             this.TB_SPE_IV1.TabIndex = 15;
             // 
             // L_Def
             // 
-            this.L_Def.Location = new System.Drawing.Point(5, 275);
+            this.L_Def.Location = new System.Drawing.Point(5, 254);
             this.L_Def.Name = "L_Def";
-            this.L_Def.Size = new System.Drawing.Size(50, 20);
+            this.L_Def.Size = new System.Drawing.Size(50, 18);
             this.L_Def.TabIndex = 19;
             this.L_Def.Text = "Def:";
             this.L_Def.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TB_SPD_IV1
             // 
-            this.TB_SPD_IV1.Location = new System.Drawing.Point(56, 317);
+            this.TB_SPD_IV1.Location = new System.Drawing.Point(56, 293);
             this.TB_SPD_IV1.Name = "TB_SPD_IV1";
             this.TB_SPD_IV1.ReadOnly = true;
-            this.TB_SPD_IV1.Size = new System.Drawing.Size(20, 20);
+            this.TB_SPD_IV1.Size = new System.Drawing.Size(20, 21);
             this.TB_SPD_IV1.TabIndex = 13;
             // 
             // L_Nature
             // 
             this.L_Nature.AutoSize = true;
-            this.L_Nature.Location = new System.Drawing.Point(91, 236);
+            this.L_Nature.Location = new System.Drawing.Point(91, 218);
             this.L_Nature.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_Nature.Name = "L_Nature";
-            this.L_Nature.Size = new System.Drawing.Size(42, 13);
+            this.L_Nature.Size = new System.Drawing.Size(47, 12);
             this.L_Nature.TabIndex = 12;
             this.L_Nature.Text = "Nature:";
             // 
             // TB_SPA_IV1
             // 
-            this.TB_SPA_IV1.Location = new System.Drawing.Point(56, 296);
+            this.TB_SPA_IV1.Location = new System.Drawing.Point(56, 273);
             this.TB_SPA_IV1.Name = "TB_SPA_IV1";
             this.TB_SPA_IV1.ReadOnly = true;
-            this.TB_SPA_IV1.Size = new System.Drawing.Size(20, 20);
+            this.TB_SPA_IV1.Size = new System.Drawing.Size(20, 21);
             this.TB_SPA_IV1.TabIndex = 11;
             // 
             // L_Atk
             // 
-            this.L_Atk.Location = new System.Drawing.Point(5, 254);
+            this.L_Atk.Location = new System.Drawing.Point(5, 234);
             this.L_Atk.Name = "L_Atk";
-            this.L_Atk.Size = new System.Drawing.Size(50, 20);
+            this.L_Atk.Size = new System.Drawing.Size(50, 18);
             this.L_Atk.TabIndex = 18;
             this.L_Atk.Text = "Atk:";
             this.L_Atk.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -266,18 +274,18 @@
             // L_ShinyInFrames
             // 
             this.L_ShinyInFrames.AutoSize = true;
-            this.L_ShinyInFrames.Location = new System.Drawing.Point(8, 103);
+            this.L_ShinyInFrames.Location = new System.Drawing.Point(8, 95);
             this.L_ShinyInFrames.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_ShinyInFrames.Name = "L_ShinyInFrames";
-            this.L_ShinyInFrames.Size = new System.Drawing.Size(81, 13);
+            this.L_ShinyInFrames.Size = new System.Drawing.Size(101, 12);
             this.L_ShinyInFrames.TabIndex = 10;
             this.L_ShinyInFrames.Text = "Shiny in frames:";
             // 
             // L_HP
             // 
-            this.L_HP.Location = new System.Drawing.Point(5, 233);
+            this.L_HP.Location = new System.Drawing.Point(5, 215);
             this.L_HP.Name = "L_HP";
-            this.L_HP.Size = new System.Drawing.Size(50, 20);
+            this.L_HP.Size = new System.Drawing.Size(50, 18);
             this.L_HP.TabIndex = 17;
             this.L_HP.Text = "HP:";
             this.L_HP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -287,21 +295,21 @@
             this.CHK_Event.AutoCheck = false;
             this.CHK_Event.AutoSize = true;
             this.CHK_Event.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CHK_Event.Location = new System.Drawing.Point(12, 171);
+            this.CHK_Event.Location = new System.Drawing.Point(12, 158);
             this.CHK_Event.Margin = new System.Windows.Forms.Padding(2);
             this.CHK_Event.Name = "CHK_Event";
             this.CHK_Event.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CHK_Event.Size = new System.Drawing.Size(78, 17);
+            this.CHK_Event.Size = new System.Drawing.Size(84, 16);
             this.CHK_Event.TabIndex = 9;
             this.CHK_Event.Text = "Event Pool";
             this.CHK_Event.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(11, 387);
+            this.button1.Location = new System.Drawing.Point(11, 357);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 27);
+            this.button1.Size = new System.Drawing.Size(184, 25);
             this.button1.TabIndex = 8;
             this.button1.Text = "Raid Calculator";
             this.button1.UseVisualStyleBackColor = true;
@@ -309,10 +317,10 @@
             // 
             // TB_DEF_IV1
             // 
-            this.TB_DEF_IV1.Location = new System.Drawing.Point(56, 275);
+            this.TB_DEF_IV1.Location = new System.Drawing.Point(56, 254);
             this.TB_DEF_IV1.Name = "TB_DEF_IV1";
             this.TB_DEF_IV1.ReadOnly = true;
-            this.TB_DEF_IV1.Size = new System.Drawing.Size(20, 20);
+            this.TB_DEF_IV1.Size = new System.Drawing.Size(20, 21);
             this.TB_DEF_IV1.TabIndex = 9;
             // 
             // PB_PK1
@@ -320,32 +328,33 @@
             this.PB_PK1.BackColor = System.Drawing.Color.Transparent;
             this.PB_PK1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.PB_PK1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_PK1.Location = new System.Drawing.Point(124, 134);
+            this.PB_PK1.Location = new System.Drawing.Point(124, 124);
             this.PB_PK1.Name = "PB_PK1";
-            this.PB_PK1.Size = new System.Drawing.Size(70, 58);
+            this.PB_PK1.Size = new System.Drawing.Size(70, 54);
             this.PB_PK1.TabIndex = 6;
             this.PB_PK1.TabStop = false;
+            this.PB_PK1.DoubleClick += new System.EventHandler(this.PB_PK1_DoubleClick);
             // 
             // CHK_Rare
             // 
             this.CHK_Rare.AutoCheck = false;
             this.CHK_Rare.AutoSize = true;
             this.CHK_Rare.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CHK_Rare.Location = new System.Drawing.Point(12, 150);
+            this.CHK_Rare.Location = new System.Drawing.Point(12, 138);
             this.CHK_Rare.Margin = new System.Windows.Forms.Padding(2);
             this.CHK_Rare.Name = "CHK_Rare";
             this.CHK_Rare.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CHK_Rare.Size = new System.Drawing.Size(73, 17);
+            this.CHK_Rare.Size = new System.Drawing.Size(78, 16);
             this.CHK_Rare.TabIndex = 5;
             this.CHK_Rare.Text = "Rare Pool";
             this.CHK_Rare.UseVisualStyleBackColor = true;
             // 
             // TB_ATK_IV1
             // 
-            this.TB_ATK_IV1.Location = new System.Drawing.Point(56, 254);
+            this.TB_ATK_IV1.Location = new System.Drawing.Point(56, 234);
             this.TB_ATK_IV1.Name = "TB_ATK_IV1";
             this.TB_ATK_IV1.ReadOnly = true;
-            this.TB_ATK_IV1.Size = new System.Drawing.Size(20, 20);
+            this.TB_ATK_IV1.Size = new System.Drawing.Size(20, 21);
             this.TB_ATK_IV1.TabIndex = 6;
             // 
             // CHK_Active
@@ -353,30 +362,30 @@
             this.CHK_Active.AutoCheck = false;
             this.CHK_Active.AutoSize = true;
             this.CHK_Active.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CHK_Active.Location = new System.Drawing.Point(12, 130);
+            this.CHK_Active.Location = new System.Drawing.Point(12, 120);
             this.CHK_Active.Margin = new System.Windows.Forms.Padding(2);
             this.CHK_Active.Name = "CHK_Active";
             this.CHK_Active.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CHK_Active.Size = new System.Drawing.Size(79, 17);
+            this.CHK_Active.Size = new System.Drawing.Size(84, 16);
             this.CHK_Active.TabIndex = 4;
             this.CHK_Active.Text = "Den Active";
             this.CHK_Active.UseVisualStyleBackColor = true;
             // 
             // TB_HP_IV1
             // 
-            this.TB_HP_IV1.Location = new System.Drawing.Point(56, 233);
+            this.TB_HP_IV1.Location = new System.Drawing.Point(56, 215);
             this.TB_HP_IV1.Name = "TB_HP_IV1";
             this.TB_HP_IV1.ReadOnly = true;
-            this.TB_HP_IV1.Size = new System.Drawing.Size(20, 20);
+            this.TB_HP_IV1.Size = new System.Drawing.Size(20, 21);
             this.TB_HP_IV1.TabIndex = 1;
             // 
             // L_DenSeed
             // 
             this.L_DenSeed.AutoSize = true;
-            this.L_DenSeed.Location = new System.Drawing.Point(53, 70);
+            this.L_DenSeed.Location = new System.Drawing.Point(53, 65);
             this.L_DenSeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_DenSeed.Name = "L_DenSeed";
-            this.L_DenSeed.Size = new System.Drawing.Size(38, 13);
+            this.L_DenSeed.Size = new System.Drawing.Size(35, 12);
             this.L_DenSeed.TabIndex = 1;
             this.L_DenSeed.Text = "$Seed";
             // 
@@ -661,10 +670,10 @@
             "84 [CT]: Ballimere Lake 16",
             "85 [CT]: Ballimere Lake 17",
             "86 [CT]: Dyna Tree Hill 1"});
-            this.CB_Den.Location = new System.Drawing.Point(56, 28);
+            this.CB_Den.Location = new System.Drawing.Point(56, 26);
             this.CB_Den.Margin = new System.Windows.Forms.Padding(2);
             this.CB_Den.Name = "CB_Den";
-            this.CB_Den.Size = new System.Drawing.Size(138, 21);
+            this.CB_Den.Size = new System.Drawing.Size(138, 20);
             this.CB_Den.TabIndex = 0;
             this.CB_Den.SelectedIndexChanged += new System.EventHandler(this.ChangeDenIndex);
             // 
@@ -673,11 +682,11 @@
             this.GB_Right.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GB_Right.Controls.Add(this.DenMap);
-            this.GB_Right.Location = new System.Drawing.Point(213, 10);
+            this.GB_Right.Location = new System.Drawing.Point(213, 9);
             this.GB_Right.Margin = new System.Windows.Forms.Padding(2);
             this.GB_Right.Name = "GB_Right";
             this.GB_Right.Padding = new System.Windows.Forms.Padding(2);
-            this.GB_Right.Size = new System.Drawing.Size(176, 419);
+            this.GB_Right.Size = new System.Drawing.Size(176, 387);
             this.GB_Right.TabIndex = 1;
             this.GB_Right.TabStop = false;
             this.GB_Right.Text = "Den Map";
@@ -687,18 +696,66 @@
             this.DenMap.BackgroundImage = global::PKHeX_Raid_Plugin.Properties.Resources.map;
             this.DenMap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DenMap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DenMap.Location = new System.Drawing.Point(2, 15);
+            this.DenMap.Location = new System.Drawing.Point(2, 16);
             this.DenMap.Margin = new System.Windows.Forms.Padding(2);
             this.DenMap.Name = "DenMap";
-            this.DenMap.Size = new System.Drawing.Size(172, 402);
+            this.DenMap.Size = new System.Drawing.Size(172, 369);
             this.DenMap.TabIndex = 0;
             this.DenMap.TabStop = false;
             // 
+            // CB_mRandRoll
+            // 
+            this.CB_mRandRoll.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_mRandRoll.FormattingEnabled = true;
+            this.CB_mRandRoll.Location = new System.Drawing.Point(143, 280);
+            this.CB_mRandRoll.Margin = new System.Windows.Forms.Padding(2);
+            this.CB_mRandRoll.Name = "CB_mRandRoll";
+            this.CB_mRandRoll.Size = new System.Drawing.Size(51, 20);
+            this.CB_mRandRoll.TabIndex = 27;
+            this.CB_mRandRoll.SelectedIndexChanged += new System.EventHandler(this.Changessrr);
+            // 
+            // CB_mStars
+            // 
+            this.CB_mStars.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_mStars.FormattingEnabled = true;
+            this.CB_mStars.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.CB_mStars.Location = new System.Drawing.Point(143, 310);
+            this.CB_mStars.Margin = new System.Windows.Forms.Padding(2);
+            this.CB_mStars.Name = "CB_mStars";
+            this.CB_mStars.Size = new System.Drawing.Size(51, 20);
+            this.CB_mStars.TabIndex = 28;
+            this.CB_mStars.SelectedIndexChanged += new System.EventHandler(this.Changessrr);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(88, 285);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "RandRoll";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(106, 315);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 12);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Stars";
+            // 
             // RaidList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 440);
+            this.ClientSize = new System.Drawing.Size(392, 406);
             this.Controls.Add(this.GB_Right);
             this.Controls.Add(this.GB_Left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -706,7 +763,7 @@
             this.Name = "RaidList";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Raid List";
+            this.Text = "Raid List (modv1.1 By ca1e)";
             this.GB_Left.ResumeLayout(false);
             this.GB_Left.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_PK1)).EndInit();
@@ -749,5 +806,9 @@
         private System.Windows.Forms.Label L_Shiny;
         private System.Windows.Forms.CheckBox CHK_Wishing;
         private System.Windows.Forms.CheckBox CHK_Watts;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox CB_mStars;
+        private System.Windows.Forms.ComboBox CB_mRandRoll;
     }
 }
